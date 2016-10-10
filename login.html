@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>Mcode</title>
+    <meta name="renderer" content="webkit">
+    <!-- Mcode自适应辅助代码，不用可删除，见：http://code.wiredmed.com/show.php?id=19&url=http://code.wiredmed.com/code/common/base/2016-04-08/19.html -->
+    <script>(function () {
+        function a() {
+            return /(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent) ? !0 : /(Android)/i.test(navigator.userAgent) ? !0 : !1
+        }
+
+        var d = document.getElementsByTagName("html")[0];
+        var e;
+        if (a()) {
+            window.isMobile = 1;
+            e = "MC"
+        } else {
+            window.isMobile = 0;
+            e = "PC"
+        }
+        d.className = d.className ? d.className + " " + e : e;
+        var b = d.className;
+
+        function c(f) {
+            var h = "";
+            var g = document.documentElement.clientWidth;
+            1600 > g && (h += " lt1600");
+            1400 > g && (h += " lt1400");
+            1200 > g && (h += " lt1200");
+            1000 > g && (h += " lt1000");
+            960 > g && (h += " lt960");
+            640 > g && (h += " lt640");
+            500 > g && (h += " lt500");
+            400 > g && (h += " lt400");
+            1600 < g && (h += " gt1600");
+            1400 < g && (h += " gt1400");
+            1200 < g && (h += " gt1200");
+            1000 < g && (h += " gt1000");
+            960 < g && (h += " gt960");
+            640 < g && (h += " gt640");
+            500 < g && (h += " gt500");
+            400 < g && (h += " gt400");
+            f.className = b + h
+        }
+
+        c(d);
+        window.onresize = function (f) {
+            c(d)
+        }
+    })();</script>
+    <!--让IE9以下浏览器支持html5标签 -->
+    <!--[if lt IE 9]>
+    <script> (function () {
+        if (!/*@cc_on!@*/0)return;
+        var e = "abbr,article,aside,audio,canvas,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','), i = e.length;
+        while (i--) {
+            document.createElement(e[i])
+        }
+    })() </script>
+    <![endif]-->
+    <!-- Mcode基础及扩展样式集合，正式使用应下载到本地 -->
+    <link rel="stylesheet" href="css/base.min.css">
+    <link rel="stylesheet" href="css/extend.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function current(){
+            var d=new Date(),str='';
+            str +=d.getFullYear()+'年'; //获取当前年份
+            str +=d.getMonth()+1+'月'; //获取当前月份（0——11）
+            str +=d.getDate()+'日';
+            str +=d.getHours()+'时';
+            str +=d.getMinutes()+'分';
+            str +=d.getSeconds()+'秒';
+            return str; }
+        setInterval(function(){$("#yj-time").html(current)},1000);
+    </script>
+</head>
+<body>
+<header>
+    <div class="yj-top-name">
+        <i class="yj-icon logo">&#xe600;</i>
+        <b>广州市民政局精神病院</b>
+    </div>
+    <p class="yj-time" id="yj-time"></p>
+</header>
+<div class="yj-middle">
+    <div class="yj-person">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+        <div class="yj-img-box swiper-slide">
+            <img src="img/nurse/6.png" alt="">
+            <p>李花花</p>
+            <i class="yj-icon selected-btn">&#xe602;</i>
+        </div>
+        <div class="yj-img-box swiper-slide">
+            <img src="img/nurse/1.png" alt="">
+            <p>库里</p>
+        </div>
+        <div class="yj-img-box swiper-slide">
+            <img src="img/nurse/3.png" alt="">
+            <p>江11</p>
+        </div>
+        <div class="yj-img-box swiper-slide">
+            <img src="img/nurse/2.png" alt="">
+            <p>博文</p>
+        </div>
+        <div class="yj-img-box swiper-slide">
+            <img src="img/nurse/5.png" alt="">
+            <p>罗佳</p>
+        </div>
+        <div class="yj-img-box swiper-slide">
+            <img src="img/nurse/4.png" alt="">
+            <p>房咯了</p>
+        </div>
+        <div class="yj-img-box swiper-slide">
+            <img src="img/nurse/5.png" alt="">
+            <p>罗佳</p>
+        </div>
+        <div class="yj-img-box swiper-slide">
+            <img src="img/nurse/4.png" alt="">
+            <p>房咯了</p>
+        </div>
+            </div>
+            <div class="pagination"></div>
+        </div>
+    </div>
+</div>
+<div class="yj-foot">
+    <div class="yj-foot-choose">
+        <b class="yj-name">张天爱</b>
+        <span>，你好，请你选择上班工种：</span>
+        <div class="yj-foot-job">
+            <p><i class="yj-icon radio-btn">&#xe603;</i>门诊挂号</p>
+            <p><i class="yj-icon radio-btn">&#xe601;</i>门诊收费</p>
+            <p><i class="yj-icon radio-btn">&#xe601;</i>住院登记及押金</p>
+            <p><i class="yj-icon radio-btn">&#xe601;</i>住院收费</p>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/idangerous.swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container',{
+        pagination: '.pagination',
+        paginationClickable: true,
+        slidesPerView: 5
+    })
+</script>
+
+</html>
