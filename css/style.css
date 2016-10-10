@@ -8,7 +8,7 @@ header{  height: 130px;  width: 100%;  background-color:#CF3320;position: relati
 .yj-top-name b{color: #FFF;font-size: 40px;position: absolute;left: 100px;top: 50%;margin-top: -26px}
 .yj-time{font-size: 20px;color: #fff;position: absolute;right: 10px;bottom: 10px}
 .yj-middle{margin-top: 20px}
-.yj-person{font-size: 0px;position: relative}
+.yj-person{font-size: 0px;position: relative;overflow: hidden}
 .yj-img-box{width: 150px;position: relative;display: inline-block;}
 .yj-img-box p{text-align: center;font-size: 18px;margin-top: 6px;color: #444}
 .yj-img-box img{width: 150px;height: 180px}
